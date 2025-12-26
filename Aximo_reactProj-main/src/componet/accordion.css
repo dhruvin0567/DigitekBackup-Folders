@@ -1,0 +1,18 @@
+.aximo-accordion-body {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height 2s ease-in-out;
+}
+
+.aximo-accordion-body.show {
+    max-height: 1000px;
+    /* Adjust as per your content's max height */
+    opacity: 1;
+}
+
+.aximo-accordion-item.open .aximo-accordion-body {
+    max-height: 1000px;
+    /* Adjust as per your content's max height */
+    opacity: 1;
+}
